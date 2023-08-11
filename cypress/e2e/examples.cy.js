@@ -31,7 +31,7 @@ describe('Various examples', () => {
 
     });
 
-    it.only('grudges', () => {
+    it('grudges', () => {
         cy.contains(/add some grudges/i);
 
         cy.getDataTest('grudge-list').within(() => {
